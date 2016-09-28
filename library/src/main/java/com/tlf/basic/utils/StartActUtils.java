@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 
-import com.tlf.basic.R;
 
 import java.io.Serializable;
 import java.util.Map;
