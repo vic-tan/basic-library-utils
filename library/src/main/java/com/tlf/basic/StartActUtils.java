@@ -26,6 +26,7 @@ public class StartActUtils {
      */
     public static void start(Context mContext, Intent intent, int anim_open, int anim_close) {
         mContext.startActivity(intent);
+        ((Activity) mContext).overridePendingTransition(anim_open, anim_close);
     }
 
     /**
@@ -33,7 +34,7 @@ public class StartActUtils {
      *
      * @param intent
      */
-    public static void startDefaultAnim(Context mContext, Intent intent) {
+    public static void startMoveAnim(Context mContext, Intent intent) {
         mContext.startActivity(intent);
         ((Activity) mContext).overridePendingTransition(R.anim.common_activity_start_open, R.anim.common_activity_start_close);
     }
@@ -45,7 +46,6 @@ public class StartActUtils {
      */
     public static void start(Context mContext, Intent intent) {
         mContext.startActivity(intent);
-        ((Activity) mContext).overridePendingTransition(R.anim.common_activity_start_open, R.anim.common_activity_start_close);
     }
 
     /**
@@ -169,7 +169,7 @@ public class StartActUtils {
      * @Description: 用一句话描述该文件做什么
      * @throws:throws
      */
-    public static void finishDefaultAnim(Context mContext) {
+    public static void finishMoveAnim(Context mContext) {
         ((Activity) mContext).finish();
         ((Activity) mContext).overridePendingTransition(R.anim.common_activity_finish_open, R.anim.common_activity_finish_close);
     }
