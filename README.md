@@ -23,7 +23,7 @@
   其中包括bitmap处理，文件操作，加密存储器，计数器，吐司，日志，校验，提示，等基础功能，以及一些Base64、MD5、等工具类。
   
 
-  1. io包：文件与IO
+   1.io包：文件与IO
   -----
   - **ByteArrayOutputStream**：         byte 数组流类
   - **ClosedInputStream**：    关闭流工具类
@@ -33,8 +33,7 @@
   - **FileUtils**：         文件流操作辅助类
   - **IOUtils**：         IO流操作辅助类
   - **StringCodingUtils**：         IO流操作辅助类
-  - 
-  2. coder：加/解密和编码
+  2.coder：加/解密和编码
   -----
   - **Base64Coder**：    base64编码/解码
   - **FileCoder**：      文件头部加密。
@@ -44,8 +43,7 @@
   - **DESCoder**：        对称加密算法 ,提供加密，解密，生成密钥对等方法。
   - **HexCoder**：        16进制编码。
   - **RSACoder**：        非对称加密算法,RSA 工具类。提供加密，解密，生成密钥对等方法。
-  - 
-  3. utils包：常用工具类
+  3.utils包：常用工具类
   -----
   - **ActivityManager**：     Activity堆栈管理类,完全退出App
   - **AppCacheUtils**：         数据缓冲/配置信息存储工具类 多进程访问
