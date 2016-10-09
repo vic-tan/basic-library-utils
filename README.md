@@ -44,7 +44,7 @@
   - **DESCoder**：        对称加密算法 ,提供加密，解密，生成密钥对等方法。
   - **HexCoder**：        16进制编码。
   - **RSACoder**：        非对称加密算法,RSA 工具类。提供加密，解密，生成密钥对等方法。
-  
+  - 
   3. utils包：常用工具类
   -----
   - **ActivityManager**：     Activity堆栈管理类,完全退出App
@@ -68,8 +68,9 @@
   - **StringUtils**：     String 判断空,排序,合并等
   - **ToastUtils**：     自定义Toast 显示view
   - **ViewFindUtils**：     findById 快捷工具类
+ 
   
-  ###Android开发常用的工具类
+
   ####BitmapUtils 
   * drawable bitmap互转
   * 获取图片在相册中的方向
