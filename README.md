@@ -33,8 +33,6 @@
   - **FileUtils**：         文件流操作辅助类
   - **IOUtils**：         IO流操作辅助类
   - **StringCodingUtils**：         IO流操作辅助类
-  -
-    
 
    2. coder：加/解密和编码
   -----
@@ -48,8 +46,6 @@
   - **RSACoder**：        非对称加密算法,RSA 工具类。提供加密，解密，生成密钥对等方法。
   -
   
-
-
    3. utils包：常用工具类
   -----
   - **ActivityManager**：     Activity堆栈管理类,完全退出App
