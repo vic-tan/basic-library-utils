@@ -11,7 +11,7 @@
   
       dependencies {
           ...
-          compile 'com.vic-tan:basic-library-utils:1.0.0'
+          compile 'com.vic-tan:basic-library-utils:1.0.1'
       }
   
   ##详细介绍
