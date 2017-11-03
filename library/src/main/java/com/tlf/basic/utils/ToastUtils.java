@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 
 /**
  * @author tanlifei
@@ -14,7 +17,7 @@ import android.widget.Toast;
  */
 public class ToastUtils {
 
-    public static final int DURATION = 1000;
+    public static final int DURATION = 1500;
 
     public static void show(Context context,int resId) {
         show(context,context.getResources().getText(resId), DURATION);
@@ -33,11 +36,24 @@ public class ToastUtils {
         TextView textV = (TextView) layout.findViewById(R.id.toast_text);
         textV.setText(text);
 
-        Toast toast = new Toast(context);
+        final Toast toast = new Toast(context);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.setDuration(duration);
         toast.setView(layout);
-        toast.show();
+        final Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                toast.show();
+            }
+        }, 0, 3000);
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                toast.cancel();
+                timer.cancel();
+            }
+        }, duration);
     }
 
     public static void show(Context context,int resId, Object... args) {
